@@ -5,11 +5,75 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Document</title>
+        <title>Kodeando</title>
     </head>
 
     <body>
         <h1>Hello word</h1>
+
+
+
+        <script>
+            console.log('Hello word');
+            // var number_one = 10 ; 
+            // console.log( number_one);
+            // sacar el area de un circulo
+            var pi= 3.141592
+            var radio = 30;
+            var area_circulo= pi *(radio**2); //formula para obtener el area de un circulo
+            console.log(area_circulo);
+            //otro ejercicio sacar el promedio
+            var koder_one=154;
+            var koder_two=160;
+            var koder_three=172;
+            var average= (koder_one + koder_two + koder_three)/3; //formula para promedio          
+            console.log(average);
+            //otro ejercicio verificar que el numero sea menor o igual a 10 y sea positivo
+            var number_user=2;
+            var result= number_user <= 10;
+            console.log(result);
+            var resultado= number_user > 0;
+            console.log(resultado);
+            //trinomio cuadrado perfecto
+            3<10 || !true && false; //verificar porque da el resultado
+            // otro ejercicio checar que el resultado sea mayor a 10 y menor a 130
+            console.log('otro ejercicio');
+            var first_num=1100;
+            var mayor_diez= first_num > 10;
+            var menor_cient= first_num <130;
+            console.log(mayor_diez, menor_cient);
+            // verificar los dos numeros sean múltiplos de 3
+            console.log('otro ejercicio');
+            var first_number =128;
+            var second_number= 33;
+            var first_result = (first_number % 3) == 0;
+            var second_result = (second_number % 3)== 0;
+            var gran_total = first_result && second_result;
+            console.log( first_result, second_result, gran_total);
+            // dos grupos con tres alumnos cada grupo, cada alumno tiene una calificacion vean, sacar el promedio de cada grupo y  si la calificacion del promedio de los dos grupos es mayor a 6
+            console.log('otro ejercicio');
+            //Primera manera de resolver
+            // primer grupo
+            var first_alumn_group_one = 6;
+            var second_alumn_group_one = 6;
+            var three_alumn_group_one = 6;
+            //----- segundo grupo
+            var first_alumn_group_two = 10;
+            var second_alumn_group_two = 10;
+            var three_alumn_group_two = 10;
+            //---- resultado de los grupos
+            var group_one= (first_alumn_group_one + second_alumn_group_one + three_alumn_group_one) /3;
+            var group_two= (first_alumn_group_two + second_alumn_group_two + three_alumn_group_two) /3;
+            var promedio_alumnos = (group_one + group_two)/2;
+            var pasan_alumnos = promedio_alumnos>=6;
+            console.log(pasan_alumnos);
+             //Segunda manera de resolver
+             //---
+            //tipos de datos hay seis tipos de datos: string, number, booleans, null, undefined, symbol (ecmascript6) el typeof se antepone a la variable si declaro una variable x es undefined no esta definida; undefined no se le asigno un valor es de tipo undefined y null esta vacio object
+            // desde ahora se debera usar === o !==
+            //verificar tipos de datos de todo
+
+        </script>
     </body>
 
 </html>
