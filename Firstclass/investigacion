@@ -1,0 +1,160 @@
+
+"Tareas":
+1. Porque JS es interpretativo
+R.Para entender en su totalidad cómo funciona este proceso te invito a que leas la sección Compiler Theory en el libro de Kyle Simpson: You Don’t know JS: Scope & Closures. El primer párrafo de esta sección nos dice:
+
+    "Puede ser evidente, o puede ser sorprendente, dependiendo de su nivel de interacción con varios lenguajes, pero a pesar del hecho de que JavaScript cae dentro de la categoría general de idiomas “dinámicos” o “interpretados”, de hecho es un lenguaje compilado. No se compila con mucha antelación, al igual que muchos lenguajes compilados tradicionalmente, ni tampoco los resultados de la compilación son portátiles entre varios sistemas distribuidos."
+
+¿Por qué se cree que JavaScript es interpretado?
+Hay muchas razones por las cuales esta creencia popular ha sido tan difundida y además tomada por cierta, estás razones podrían ser:
+
+El hecho de que Wikipedia en su página dedicada a JavaScript diga que este es interpretado.
+Debido a la falta de un archivo final compilado, por ejemplo: .exe
+Muchos libros para aprendices de JavaScript afirman que este es un lenguaje interpretado.
+
+EN general , se encuentra que JavaScript es un lenguaje de programación interpretado, lo que significa que no necesita ser compilado.
+
+2. Buscar las diferencias entre Java y JS
+Ejemplos importantes de sus muchas diferencias:
+
+    °JavaScript es un lenguaje interpretado, y Java es compilado. Para entendernos, y dicho muy básicamente, los programas JavaScript son archivos de texto que pueden leer tanto los ordenadores como las personas, mientras que los de Java se compilan a un archivo especial optimizado para que lo lea un ordenador y lo ejecute. Podríamos entrar en detalles de que Java se compila a un lenguaje intermedio llamado bytecode que es interpretado por un ejecutar JIT que facilita que sea multiplataforma, pero no es el objeto de este artículo y quiero mantenerlo intencionadamente simple.
+
+    °Java se depura en dos fases y JavaScript en una. Como con todos los lenguajes interpretados, en JavaScript solamente sabes si has cometido inadvertidamente un error de sintaxis cuando vas a ejecutar el programa (salvo que uses herramientas especializadas como Visual Studio o WebStorm, que interpretan el código en segundo plano). En Java sin embargo, primero se realiza la fase de compilación, en la que el compilador ya indica los posibles errores de sintaxis que existan. Luego al ejecutar podrían surgir errores de lógica o de otra índole. En JavaScript todos ellos se depuran al mismo tiempo, haciéndolo más complicado.
+
+    °Java es un lenguaje orientado a objetos puro, pero JavaScript está basado en prototipos. En realidad JavaScript debe simular muchas de las características de orientación a objetos que se dan en la mayoría de los lenguajes. A cambio proporciona diversos paradigmas de programación (funcional, imperativo, dinámico y orientado a objetos) lo que lo convierte en un lenguaje tremendamente versátil. De hecho en JavaScript es posible cambiar la "base" de la que hereda una clase en cualquier momento, afectando a todas, cosa imposible en la mayoría de los lenguajes orientados a objetos.
+    
+    °Java es fuertemente tipado, y JavaScript es débilmente tipado. En Java todas las variables tienen un tipo determinado y una vez definidas no se pueden cambiar. En JavaScript una misma variable puede contener primero un texto, luego un número, luego una fecha o un objeto, etc... Esto es un arma de doble filo pues permite una gran flexibilidad a cambio de muchos posibles errores si no tenemos cuidado.
+
+    °Java tiene ámbito por bloque y JavaScript lo tiene por función: el acceso a las variables depende de dónde las hayamos definido. JavaScript tiene algunas reglas que pueden despistar bastante a los programadores de otros lenguajes.
+
+    °JavaScript tiene clausuras, Java las acaba de incorporar. Uno de los conceptos más importantes en la programación con JavaScript (y en otros lenguajes) son las clausuras. Java no las tuvo hasta la versión 8 aparecida hace muy poco tiempo, que añadió también las funciones lambda, para dar soporte al paradigma de programación funcional.
+
+    °Las funciones en JavaScript son multi-argumento siempre. En Java es necesario indicarlo.
+
+    °JavaScript es estándar, Java no. El control del lenguaje JavaScript lo lleva la organización sin ánimo de lucro European Computer Manufacturers Association (ECMA). De hecho su nombre oficial es ECMAScript, y está estandarizado. Por el contrario el control sobre Java lo tiene Oracle, una empresa privada que decide a su antojo lo que se hace con él.
+
+3. Qué es motor V8?
+Chrome V8 es un motor de código abierto para JavaScript creado por Google, siendo su programador jefe Lars Bak.4​
+
+Está escrito en C++ y es usado en Chromium, Google Chrome y en Microsoft Edge a partir del 2019.5​6​ También está integrado en el navegador de internet del sistema operativo Android 2.2 “Froyo”. Implementa ECMAScript como especifica ECMA-262 5.ª edición y corre en Windows XP, Vista, Mac OS X 10.5 (Leopard) y Linux en procesadores IA-32 y ARM.
+
+Chrome V8 puede funcionar de manera individual (standalone) o incorporada a cualquier aplicación C++.
+
+4. Ejercicio de trinomio cuadrado perfecto
+5.por que 3&&3 da 3
+
+6.jerarquia de operaciones
+Primero, debes realizar:
+Potencias y raíces.
+52=25,121−−−√=11
+ 
+
+Segundo, debes realizar:
+Multiplicaciones y divisiones
+Dentro de una misma operación, puedes encontrar más de una multiplicación o división, en tal caso, debes irlas realizando de izquierda derecha.
+5×6÷3=30÷3=10
+
+Tercero,debes  realizar:
+Sumas y restas.
+3+5=8, 9-3=6
+
+7. Qué son API
+Una API es un conjunto de funciones y procedimientos que cumplen una o muchas funciones con el fin de ser utilizadas por otro software. Las siglas API vienen del inglés Application Programming Interface. En español sería Interfaz de Programación de Aplicaciones.
+
+Una API nos permite implementar las funciones y procedimientos que engloba en nuestro proyecto sin la necesidad de programarlas de nuevo. En términos de programación, es una capa de abstracción.
+
+Las API simplifican el desarrollo de las aplicaciones, lo cual permite ahorrar tiempo a los desarrolladores y dinero a las empresas. Cuando diseña herramientas y productos nuevos (o maneja otros actuales), las API le otorgan flexibilidad; simplifican el diseño, la administración y el uso; y proporcionan oportunidades para la innovación.
+
+Las API son un medio simplificado para conectar su propia infraestructura a través del desarrollo de aplicaciones nativas de la nube, pero también le permiten compartir sus datos con clientes y otros usuarios externos. Las API públicas representan un valor comercial único porque simplifican y amplían la forma en que se conecta con sus partners y, además, pueden rentabilizar sus datos
+
+8. Qué significa código dinámico
+
+El Análisis dinámico de software es un tipo de análisis de software que supone la ejecución del programa y observar su comportamiento (a diferencia de las técnicas estáticas de análisis que no ejecutan el software). Para que el análisis dinámico resulte efectivo el programa a ser analizado se debe ejecutar con los suficientes casos de prueba como para producir un comportamiento interesante, se pueden usar varias estrategias de pruebas de software para lograr esto tales como cobertura de código o simplemente programas conocidos como fuzzers que ayudan a asegurar que una porción adecuada del conjunto de posibles comportamientos del programa ha sido observada. Otras herramientas en vez de probar casos de pruebas buscan a otros tipos de deficiencias en el software.
+
+se puede llevar a cabo un análisis dinámico de código o un análisis estático del mismo.
+
+El análisis estático presenta frente al dinámico la ventaja de que se hace sin ejecutar el código. Como no necesita de esa ejecución, el análisis estático permite detectar errores en una fase muy temprana de la escritura. Así se ahorra mucho tiempo en fases posteriores del desarrollo. El problema más grave que ofrece en cambio, es que puede arrojar positivos que no lo son y cuya falsedad solo se verá durante la ejecución del código.
+
+El análisis dinámico de código se realiza mientras el código se está ejecutando. Es más lento y necesita un proceso completo de testeo. Sin embargo, permite ver muchos errores que quedan ocultos en un análisis estático.
+
+Proceso de pruebas para el análisis dinámico de código
+
+Los dos tipos de análisis de código mencionados admiten procesos completos de pruebas. Existen diferentes tipos de ellas especialmente diseñadas para el análisis dinámico de código y para el estático. En este último caso, se recomienda un buen proceso de revisión de la documentación y de mantenimiento de la misma. Sobre todo, para beneficio de los desarrolladores que trabajan en proyectos de gran envergadura. En este tipo de trabajos los cambios están a la orden del día y, sin una documentación adecuada, es imposible mantener una visión general del proyecto.
+
+Tipos de pruebas para el análisis dinámico de código
+
+De caja negra: El objetivo de estas pruebas es comprobar que las salidas son correctas. No se presta atención al modo en que dichas salidas se realizan. Se atiende a una independencia modular para una implementación más fácil de cada módulo. Así resulta más sencillo abordar el fallo.
+
+
+De caja blanca: se centran en los fallos de procedimiento relativos a las entradas. El método suele consistir en realizar todas las entradas posibles para obtener una salida determinada. Este tipo de pruebas debe modificarse cada vez que varía la implementación en el proyecto.
+
+Sea cual sea el tipo de prueba que se realice, los análisis dinámicos de código necesitan de un equipo de control de calidad que los lleve a cabo. La independencia entre los desarrolladores y el equipo de pruebas debe ser total para evitar fallos durante el proceso. En Go4IT Solutions nos aseguramos de esta independencia disciplinar en todos nuestros proyectos. Pero si deseas comprobarlo por ti mismo, no tienes más que ponerte en contacto con nosotros.
+
+9. Ir estudiando sentencias, ciclos, arrays y objetos
+Las aplicaciones JavaScript se componen de sentencias con una sintaxis propia. Una sentencia puede estar formada por múltiples líneas. Puede haber varias sentencias en una sola línea si separamos cada una de las sentencias por un punto y coma. No es una palabra clave, sino un grupo de palabras clave.
+
+Sentencias y declaraciones por categoríaSección
+Puedes encontrarlas por orden alfabético en la columna de la izquierda .
+
+Control de flujoSección
+Block
+Un bloque de sentencias se utiliza para agrupar cero o mas sentencias. El bloque se delimita por un par de llaves.
+break
+Finaliza la sentencia actual loop, switch, o label y transfiere el control del programa a la siguiente sentencia de la sentencia finalizada.
+continue
+Finaliza la ejecucion de las sentencias dentro de la iteracion actual del actual bucle,  y continua la ejecucion del bucle con la siguiente iteracion.
+Empty
+Una sentencia vacía se utiliza para proveer una "no sentencia", aunque la sintaxis de JavaScript esperaba una.
+if...else
+Ejecuta una sentencia si una condición especificada es true. Si la condición es false, otra sentencia puede ser ejecutada.
+switch
+Evalua una expresión, igualando el valor de la expresión a una clausula case y ejecuta las sentencias asociadas con dicho case.
+throw
+Lanza una excepción definida por el usuario.
+try...catch
+Marca un bloque de sentencias para ser probadas (try) y especifica una respuesta, en caso de que se lance una excepción.
+DeclaracionesSección
+var
+Declara una variable, opcionalmente inicializándola a un valor.
+let
+Declara una variable local de ambito de bloque, opcionalmente inicializándola a un valor.
+const
+Declara una constante de solo lectura.
+FuncionesSección
+function
+Declara una función con los parámetros especificados.
+function*
+Los generadores de funciones permiten escribir iteradores con mas facilidad.
+ async function
+Declara una función asíncrona con los parámetros especificados.
+return
+Especifica el valor a ser retornado por una función.
+class
+Declara una clase.
+IteracionesSección
+do...while
+Crea un bucle que ejecuta una instrucción especificada hasta que la condición de prueba se evalúa como falsa. La condición se evalúa después de ejecutar la instrucción, lo que da como resultado que la instrucción especificada se ejecute al menos una vez.
+for
+Creates a loop that consists of three optional expressions, enclosed in parentheses and separated by semicolons, followed by a statement executed in the loop.
+ for each...in
+Itera una variable especificada sobre todos los valores de las propiedades del objeto. Para cada propiedad distinta, se ejecuta una instrucción especificada.
+for...in
+Itera sobre las propiedades enumerables de un objeto, en orden albitrario. Para cada propiedad distinta, las instrucciones pueden ser ejecutadas.
+for...of
+Iterates over iterable objects (including array, array-like objects, iterators and generators), invoking a custom iteration hook with statements to be executed for the value of each distinct property.
+while
+Crea un bucle que ejecuta la instrucción especificada siempre que la condición de prueba se evalúe como verdadera. La condición se evalúa antes de ejecutar la instrucción.
+OtrosSección
+debugger
+Invoca cualquier funcionalidad de depuración disponible. Si no hay funcionalidad de depuración disponible, esta isntrucción no tiene efecto.
+export
+Usada para permitir a un script firmada proveer propiedades, funciones y objetos a otros scripts firmada o sin firmar. Esta antigua funcionalidad de Netscape ha sido removida y será redefinida por los modulos de ECMAScript 6
+import
+Usada para permitir a un escript importar propiedades, funciones y objetos desde otro script firmado que ha exportado su información. Esta antigua funcionalidad de Netscape ha sido removida y será redefinida por los modulos de ECMAScript 6.
+label
+Provee una instrucción con un identificador que puedes referir usando una instrucción break o continue .
+ with
+Extiende la cadena de alcance para una instrucción.
+
+10. Ejercicio del promedio de los alumnos
+ver carpeta Firstclass, archivo index.html en la ultima parte
