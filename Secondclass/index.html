@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        //ejemplo de como se escriben las condicionales
+        var number = 4
+        if ( number === 3){
+            console.log('Sí son iguales')
+        } else {
+            console.error ('No es 3')
+        }
+        // ejemplo dos
+        var password ='nope'
+        if (password === 'micontraseña'){
+            console.log('Yep')
+        }else {
+            console.error ('No es la contraseña')
+        }
+        //otro statment con else if
+        var number = 6
+        if ( number === 3){
+            console.log('Sí son iguales')
+        } else if (number === 6){
+            console.log('Sí es 6 ')
+        }
+        else {
+            console.error ('No es ninguno')
+        }
+        //-----------------------
+        //Ejercicio: Mi numero es multiplo de 13
+        var number_ejer1 = 12;
+        if ( number_ejer1 % 13 === 0 )
+        {
+            console.log ('Sí es multiplo')
+        }else{
+            console.log ('No es multiplo')
+        };
+
+        // El producto de dos numero es un numero par menor que 30, sino , es mayor o igual que 30 menor que 50
+        var number_ejer2 = 31;
+        if (number_ejer2 % 2 === 0)
+        { 
+            console.log('Es par')
+        } else if ( number_ejer2 < 30){
+            console.log ('Es menor que 30')
+        } else if ( number_ejer2 >= 30){
+            console.log ('Es mayor o igual a 30')
+        }else if ( number_ejer2 < 50){
+            console.log (' es menor que 50')
+        } else {
+            console.log ('Que diablos haces?')
+        };
+        //otro juntos
+        var number_one_ejer2 = 13;
+        var number_two_ejer2 = 3;
+        var number_ejer2 = number_one_ejer2 * number_two_ejer2;
+
+        if ((number_ejer2 % 2 === 0 && number_ejer2 < 30) && ( number_ejer2 >= 30 &&  number_ejer2 < 50))
+        { 
+            console.log('si cumple con todo')
+        } else {
+            console.log ('Que diablos haces?')
+        };
+          //otro juntos
+        var number_one_ejer2 = 13;
+        var number_two_ejer2 = 3;
+        var number_ejer2 = number_one_ejer2 * number_two_ejer2;
+
+        if (number_ejer2 % 2 === 0 && number_ejer2 < 30)
+        { 
+            console.log('si cumple con primera')
+        } else if ( number_ejer2 >= 30 &&  number_ejer2 < 50){
+            console.log ('cumple con la segunda')
+        }  else {
+            console.log ('Que diablos haces?')
+        };
+        //ciclo while ejemplo
+        while (){
+
+        }
+    </script>
+</body>
+</html>
