@@ -138,14 +138,29 @@
            if (word[i]=== 'a'){   
            auxiliar_cont++} 
         }
-        console.log(word + ' tiene ' + auxiliar_cont)
+        console.log(word + ' tiene ' + auxiliar_cont);
         
-        
-        //sin metodo la position si no existe una letra
-        //mayuscula y minuscala con metodo y sin metodo
+        var word = 'hoooolaa';
+        var auxiliar_cont= 0;
+        var longitud = word.length;
+        for (var i=0; i<longitud; i++){
+           if (word[i]=== 'a'){   
+           auxiliar_cont++} 
+           //todo a mayusculas
+        };
+        console.log(word.toLowerCase() + ' tiene ' + auxiliar_cont);
+        console.log(word.toUpperCase() + ' tiene ' + auxiliar_cont);
+        //mayuscula y minusculas con metodo y sin metodo
         //INPUT -> ogoaag
         //output ->AgAOOg
+        var word_hw_One= 'ogoaag';
+        var new_word_hw_One= word_hw_One.replace(/o/g, 'A');
+        var new_new_word_hw_One= new_word_hw_One.replace(/a/g, 'O');
+        console.log( new_new_word_hw_One);
+       
         //checar si la palabra ingresada es un palindromo o no roooor
+     
+
     </script>
 </body>
 </html>
