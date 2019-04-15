@@ -159,7 +159,18 @@
         console.log( new_new_word_hw_One);
        
         //checar si la palabra ingresada es un palindromo o no roooor
-     
+        var palindromo = "roooor";
+        var auxiliar_cont= 0;
+        var arr_palindromo = palindromo.split("");
+        var reverse_palindromo = "";
+        for(var i = arr_palindromo.length-1; i >= 0; i--){
+            reverse_palindromo += palindromo[i];
+        }
+        if(palindromo.toLowerCase().replace(/ /g, '') === reverse_palindromo.toLowerCase().replace(/ /g, '')){
+            console.log(palindromo + " es palindromo");
+        }else{
+            console.log(palindromo + " no es palindromo");
+        }
 
     </script>
 </body>
