@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+
+    <body>
+
+
+
+
+        <script>
+            // arreglo es usado para almacenar informacion en memoria, es una lista se asigna utilizando corchectes en una variable, se puede acomodar los miembros de la lista. por ejemplo var cars=['saab', 'volvo', 'bmw']
+            // los arreglos empiezan a contar sus posicion desde sus posiciones. para acceder  sus valores, 
+            var cars = ['saab', 'volvo', 'bmw'];
+            // una matriz es una arreglo de arreglos, cada posicion de nuestro arreglo primncipal hace referencia a otro arreglo
+            console.log(cars[2]);
+            var matriz = [
+                ['uno', 'dos', 'tres'],
+                [1, 2, 3, ]
+            ];
+
+            console.log(matriz[1][2]);
+
+            var tri = [
+                ['uno', 'dos', 'tres'],
+                [
+                    ['cuatro', 'cinto']
+                ],
+                [1, 2, 3]
+            ]
+            console.log(tri[1][0][1])
+
+            // string tiene metodos
+            // array metodos
+            var cars = ['saab', 'volvo', 'bmw'];
+            var personas = ['Vero', 'Isra']
+
+            cars.push('Honda')
+            cars.push('VW')
+            console.log(cars)
+            cars.push('Meche')
+            cars.push('Ford')
+            console.log(cars)
+
+            var cars = ['saab', 'volvo', 'bmw'];
+            var personas = ['Vero', 'Isra']
+
+            var carsAndPeople= cars.concat(personas)
+            console.log(carsAndPeople)
+
+            console.log (carsAndPeople.fill('random'))
+            var fruits = [ 'banana', 'orange', 'apple', 'mango' ]
+            fruits.splice(2, 0, 'Lemon', )
+            console.log(fruits)
+            fruits.splice(2, 1, 'kiwi')
+            console.log(fruits)
+            var primera_parte= fruits.slice(0,1)
+            var segunda_parte= fruits.slice(1, fruits.length)
+            primera_parte.push('manzana')
+            var concatenar= primera_parte.concat(segunda_parte)
+            console.log(concatenar)
+            console.log(fruits.indexOf('kiwi'))
+
+            Array.isArray(cars)
+            console.log(Array.isArray(cars))
+            console.log(cars.join(' '))//puede ser , espacio, gato
+            console.log(cars.lastIndexOf('saab'))
+            console.log(cars.reverse())
+            console.log(cars.sort())// los ordena alfaveticamente
+            console.log(cars.toString())
+            //pop y push
+
+
+            //funciones: es un compartamienoto encapslado, recibe ordenmientos y da un resultado, las funciones son objetos palabra reservado function, nombre, (parametros){cuerpo} puede resibir cuantos parametros queramos
+            function suma (a, b, c) {
+                var resultado =a + b + c
+                return resultado
+            }
+
+            console.log (suma(5, 4, 2))
+
+            function suma (a, b, c) {
+                var resultado =a + b + c
+                 if (c== undefined){ 
+                 resultado =a +b
+                 }else{
+                     resultado= a+b+c
+                 }return resultado
+            }
+
+            console.log (suma(5, 4, 2))
+            //
+            function plus ( numeros){
+                var resultado = 0
+                for(var i=0; i<= numeros.length-1; i++){
+                    var numero = numeros[i]
+                    resultado += numero
+                }
+                return resultado
+            }
+            console.log (plus([5, 60, 2]))
+
+            var multiplicar = function (a, b){
+                return a*b
+            }
+            console.log(multiplicar(2,3))
+
+            var division= (a, b)=>{
+                return a/b
+            }
+            console.log(division(4,4))
+
+            function isCarlos (nombre){
+                if (nombre === 'carlos') {
+                    return true
+                    }return false
+            }
+
+            console.log(isLuis('cardslos'))
+
+            function isLuis (nombre){
+                if (nombre === 'luis') return true
+                return false
+            }
+
+            console.log(isLuis('luis'))
+
+            function isAlex(nombre){
+                return (nombre === 'Alex')? 'si es': 'no es'
+            }
+
+            console.log(isAlex('Alex'))
+
+            var isAlberto = nombre => nombre ==='Alberto'
+            console.log(isAlberto('Alberto'))
+
+            // ---------------
+
+            cars.forEach(function(coche, index){
+                console.log('carro: ', coche)
+                console.log('index: ', index)
+            })
+
+
+            cars.forEach(function(coche, index){
+               if(index%2==0){
+                    console.log('carro: ', coche)
+                console.log('index: ', index)
+            }else{
+                console.log('otro')
+            }
+            })
+            
+            var lista = cars.map(function(coche, index){
+                var num= index + 1
+                var entradaEnLista = num + coche
+                return entradaEnLista
+            })
+            console.log (lista)
+
+        </script>
+    </body>
+
+</html>

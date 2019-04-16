@@ -119,7 +119,7 @@
         //var new_curp = curp.replace ('96', '80') //guarda el nuevo
         greeting.toUpperCase() //todo a mayusculas
         greeting.toLowerCase()//todo a minusculas
-        greeting.charAt(9) //d
+        greeting.charAt(9) //d es lo que devuelve
         greeting.charAt(90) // sino existe no devuelve nada
         greeting.split() //['hello word']
         greeting.split('')// ['h' 'e' 'l' 'l' ...]
@@ -145,12 +145,28 @@
         var longitud = word.length;
         for (var i=0; i<longitud; i++){
            if (word[i]=== 'a'){   
-           auxiliar_cont++} 
-           //todo a mayusculas
+           auxiliar_cont++
+           } 
+          
         };
         console.log(word.toLowerCase() + ' tiene ' + auxiliar_cont);
         console.log(word.toUpperCase() + ' tiene ' + auxiliar_cont);
         //mayuscula y minusculas con metodo y sin metodo
+        var word = 'hoooolAA';
+        var auxiliar_cont= 0;
+        var longitud = word.length;
+        for (var i=0; i<longitud; i++){
+           if (word[i]=== 'a'){   
+           auxiliar_cont++
+           } else if (word[i] === 'A'){
+            auxiliar_cont++
+           }
+          
+        };
+        console.log(word + ' tiene ' + auxiliar_cont);
+     
+
+
         //INPUT -> ogoaag
         //output ->AgAOOg
         var word_hw_One= 'ogoaag';
