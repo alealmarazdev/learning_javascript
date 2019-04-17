@@ -94,7 +94,11 @@ console.log(unir);
 // output 'Holi A Todos'arrOracionACapitalizar[0].toUpperCase() 
 
 var oracionACapitalizar = 'holi a todos'
-var arrOracionACapitalizar = oracionACapitalizar.split('')
-console.log(arrOracionACapitalizar)
-var intentoOne = arrOracionACapitalizar
-console.log(intentoOne)
+var arrOracionACapitalizar = oracionACapitalizar.split(' ').map(function (element, index) {
+    var wordArray = element.split('')
+    wordArray[0].toUppercase()
+    return wordArray
+})
+console.log(wordArray)
+// var intentoOne = arrOracionACapitalizar
+// console.log(intentoOne)
