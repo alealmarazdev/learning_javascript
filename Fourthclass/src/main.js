@@ -93,12 +93,21 @@ console.log(unir);
 // input 'holi a todos'
 // output 'Holi A Todos'arrOracionACapitalizar[0].toUpperCase() 
 
-var oracionACapitalizar = 'holi a todos'
-var arrOracionACapitalizar = oracionACapitalizar.split(' ').map(function (element, index) {
-    var wordArray = element.split('')
-    wordArray[0].toUppercase()
-    return wordArray
-})
-console.log(wordArray)
+// var oracionACapitalizar = 'holi a todos'
+// var arrOracionACapitalizar = oracionACapitalizar.split(' ').map(function (element, index) {
+//     var wordArray = element.split('')
+//     wordArray[0].toUppercase()
+//     return wordArray
+// })
+// console.log(wordArray)
 // var intentoOne = arrOracionACapitalizar
 // console.log(intentoOne)
+
+var word ='holi a todos'
+word.split(' ').map(function (element) {
+    var wordArray = element.split('')
+    wordArray[0] = wordArray[0].toUppercase()
+    return wordArray.join (' ')
+}).join(' ')
+
+console.log(word)
