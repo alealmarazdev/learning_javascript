@@ -141,11 +141,45 @@ var hobbies_obj = koders_array.forEach(function (element, index, array) {
     // console.log('Hola soy ' + element.nombre + ' y mis hobbies son ' + element)
 }) 
 
+// var hobbiess = koders_array.hobbies.filter(function (element, index, array) {
+//     var filter_elements=  element.hobbies.map(function (element) {
+//         console.log 
+//     })
+// }) 
 
+var new_koders_array_videojuegos = koders_array.filter(function (element) {
+  return element.hobbies.includes('Videojuegos')
+})
+console.table(new_koders_array_videojuegos)
 
-var hobbiess = koders_array.hobbies.filter(function (element, index, array) {
-    var filter_elements=  element.hobbies.map(function (element) {
-        console.log 
-    })
-}) 
+// otra solucion includes jala wl array metodo no funcional que regresa un booleano que regresa un boleano dentro de la array; regresa un booleano indexof regresa un -1 sino esta 
 
+var new_koders_array_videojuegos = koders_array.filter(function (element) {
+  return element.hobbies.indexOf('Videojuegos') !== -1
+}).forEach(function(element){
+  console.log(element.nombre)
+})
+
+// for each regresa cada una de las posicion
+
+var number_array = ['Augus', 'Ale']
+number_array.forEach(function(element, index){
+  var koder = element + ' Tiene el numero de lista: ' + String(index + 1)
+  console.log(koder);
+})
+
+koders_array.forEach(function (element, index, array) {
+  // console.log(element, index, array);
+  element.edad = element.edad + 1
+  console.log(element.edad);
+})
+
+var number_array = [1, 2, 3, 4, 5]
+number_array.map(function (element) {
+  if (element % 2 === 0) {
+    return element *2
+  } else {
+    return element
+  }
+})
+// console.log(element);

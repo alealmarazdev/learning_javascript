@@ -29,4 +29,33 @@ console.log(factorial(5))
 // 4. identificar si es un numero o palabra
 
 
+var some_array = ['pan', 'ven', 'hub', 'ala']
+var palabra= ''
+for (var i = 0; i < some_array.length; i++){
+    palabra = palabra + some_array[i] + ' '
+
+}
+console.log(palabra);
+
+var separando_palabra = palabra.forEach(element => {
+      console.log (element)
+});
+    // if (palabra.length === 3) {
+    //     console.log('igual a tres')
+    // } else {
+    //     console.log(' no es tres')
+    // }
+
+// var contador_letras = palabra.indexOf('ven')
+// console.log(contador_letras)
+
+
+// var new_some_array = some_array.toString()
+// console.log(some_array)
+// console.log(new_some_array)
+// var separar_array = new_some_array.split('');
+// console.log(separar_array)
+// var index_array = separar_array.length
+// console.log(index_array)
+
 
