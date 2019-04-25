@@ -62,7 +62,7 @@ var person = {
 }
 console.log(person.getName())
 //  con arreglo de objetos de ayer van ha hacer un metodo que funcione igual que el ejericio 2.1
-
+//----------------------
 var koders_array = [{
         'nombre': 'David',
         'edad': 22,
@@ -71,9 +71,7 @@ var koders_array = [{
             'Fotografia',
             'Viajar'
         ],
-        getNameHobbie: function () {
-            return 'Yo soy' + ' ' + this.nombre + ' y mis hobbies son ' + this.hobbies.join(', ')
-        },
+       
     },
     {
         'nombre': 'Jorge',
@@ -84,10 +82,7 @@ var koders_array = [{
             'Lectura',
             'Dibujar'
         ],
-        getNameHobbie: function () {
-            return 'Yo soy' + ' ' + this.nombre + ' y mis hobbies son ' + this.hobbies.join(', ')
-        },
-
+       
     },
     {
         'nombre': 'Erick',
@@ -97,9 +92,7 @@ var koders_array = [{
             'Caligrafia',
             'Videojuegos'
         ],
-        getNameHobbie: function () {
-            return 'Yo soy' + ' ' + this.nombre + ' y mis hobbies son ' + this.hobbies.join(', ')
-        },
+        
     },
     {
         'nombre': 'Diana',
@@ -109,9 +102,7 @@ var koders_array = [{
             'Hardware',
             'Videojuegos'
         ],
-        getNameHobbie: function () {
-            return 'Yo soy' + ' ' + this.nombre + ' y mis hobbies son ' + this.hobbies.join(', ')
-        },
+       
     },
     {
         'nombre': 'Rodo',
@@ -121,50 +112,47 @@ var koders_array = [{
             'Musica',
             'Programacion'
         ],
-        getNameHobbie: function () {
-            return 'Yo soy' + ' ' + this.nombre + ' y mis hobbies son ' + this.hobbies.join(', ')
-        },
+        
     }
 ];
-koders_array.forEach(function (element) {
-    console.log(element.getNameHobbie())
-})
 
+
+/* koders_array[2]['nombre']
+koders_array[2].nombre */
 // una funcion contructura de objeto es una funcion que constuye un objeto de un tipo las funciones se ponen con mayusculas
-// function Car (color, brand, modelo, año) {
-//     this.color = color,
-//     this.brand = brand,
-//     this.modelo = modelo,
-//     this.año = año,        
-// }
 
-var koders_array = [{
-    'nombre': 'David',
-    'edad': 22,
-    'genero': 'M',
-    'hobbies': [
-        'Fotografia',
-        'Viajar'
-    ],
-    getNameHobbie: function () {
-        return 'Yo soy' + ' ' + this.nombre + ' y mis hobbies son ' + this.hobbies.join(', ')
-    },
-}]
+
 
 function Koders(nombre, edad, genero, hobbies) {
-    this.nombre = nombre,
-    this.edad = edad,
-    this.genero = genero,
-    this.hobbies = hobbies  
+    this.nombre = nombre
+    this.edad = edad
+    this.genero = genero
+    this.hobbies = hobbies
+    this.getNameHobbie= function () {
+        return 'Yo soy' + ' ' + this.nombre + ' y mis hobbies son ' + this.hobbies.join(', ')
+    }
 }
 
-getNameHobbie: function () {
-    return 'Yo soy' + ' ' + this.nombre + ' y mis hobbies son ' + this.hobbies.join(', ')
-},
 
-var all_koders = [new Koders('David', '22', 'M', ['Fotografia', 'viajar'], ), new Koders('Jorge', '23', 'M', ['Videojuegos', 'Lectura', 'Dibujar']), new Koders ('Erick', '25', 'M', ['Caligrafia', 'Videojuegos'])]
+
+/* --------- con solo videojuego */
+
 
 koders_array.forEach(function (element) {
-    console.log(element.getNameHobbie())
+    if (element.hobbies.includes('Videojuegos')){   
+       var persona = new Koders(element.nombre,  element.edad, element.genero,  element.hobbies)
+       console.log(persona.getNameHobbie()) 
+    }  
 })
-console.log(all_koders[0])
+
+/*  */
+
+var new_koders_array_videojuegos = koders_array.filter(function (element) {
+  return element.hobbies.includes('Videojuegos')
+})
+
+
+new_koders_array_videojuegos.forEach(function (element) {
+   var persona = new Koders(element.nombre,  element.edad, element.genero,  element.hobbies)
+   console.log(persona.getNameHobbie())
+})
