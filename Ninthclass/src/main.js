@@ -1,6 +1,8 @@
 /* objeto tiene propiedades, valores y atributos
 setter, innertext, interhtml, html collection
 outputs*/
+/* El método querySelectorAll() de un Element devuelve una NodeList estática (no viva) que representa una lista de elementos del documento que coinciden con el grupo de selectores indicados. */
+
 /* document.write('hola')
 document.getElementsByTagName('body')[0].innerText = 'hello word'
 document.getElementsByTagName('body')[0].innerHTML = '<h1>hello world</h1>'
@@ -22,6 +24,7 @@ console.log(document.getElementsByTagName('li').innerHTML = '</ul>')
 console.log(document.getElementsByTagName('div').innerHTML = '</div>')
 
 /* ---------------- */
+
 /* console.log(document.getElementsByTagName('div').innerHTML = '<div>')
 console.log(document.getElementsByTagName('ul').innerHTML = '<ul>')
 
@@ -126,3 +129,6 @@ document.getElementsByTagName('body')[0].appendChild(node_div)
 for (var i=0; i<node_h2.length; i++ ){
         node_h2[i].appendChild(txt)
  }
+
+
+ 
