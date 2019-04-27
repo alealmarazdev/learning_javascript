@@ -86,9 +86,9 @@ function createParent(tag){
 }
 /* console.log(createParent()); */
 
-function createChildren(tag){
-    return element = document.createElement(tag)
-}
+// function createChildren(tag){
+//     return element = document.createElement(tag)
+// }
 
 /* console.log(createChildren()); */
 
@@ -130,3 +130,4 @@ function init(){
 
 init()
 
+/* remove desde el parent al child */
