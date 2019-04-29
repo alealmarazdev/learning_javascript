@@ -1,6 +1,12 @@
 console.log('Hello word form script src tag')
 
 // rutas absoluta y rutas relativa
+/* Las rutas relativas no pueden extenderse a unidades de disco.
+Las rutas absolutas funcionan mejor cuando no se mueven los datos, que es lo habitual en los equipos personales.
+Las rutas relativas funcionan mejor al entregar documentos de datos a otro usuario.
+Las rutas relativas utilizan la notación de punto/dos puntos seguidos (. y ..). Puede introducir rutas relativas siguiendo esta notación en el Explorador de Windows o en el símbolo del sistema de Windows.
+ArcGIS no permite el uso de rutas relativas con la notación de punto/dos puntos seguidos. En su lugar, las rutas relativas se almacenan en el documento o la caja de herramientas (una vez que se marque la opción Guardar nombres de ruta relativos).
+Las rutas relativas lo son con respecto a un directorio actual, que es la ubicación de la caja de herramientas o el documento guardado. */
 // dos funciones que va a recibir un parametro, primera funcion va a transformar de dolarea  a pesos y
 // la segunda funcion va a transformar de psos de gasolina
 

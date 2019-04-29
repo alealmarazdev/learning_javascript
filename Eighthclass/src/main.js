@@ -1,4 +1,4 @@
- /* while es un ciclo se VideoTracka repetir mientras una condicion se cumpla se escribe de la siguiente manera: while(){} adentro de las llaves se ejecuta, en los parentesis una comparacion y returna un booleano por ejemplo 1==='1' false,  */
+ /* while es un ciclo se  repetir mientras una condicion se cumpla se escribe de la siguiente manera: while(){} adentro de las llaves se ejecuta, en los parentesis una comparacion y returna un booleano por ejemplo 1==='1' false,  */
 /*
 var x=1,
 while (x<=100){
@@ -44,13 +44,151 @@ function calculadora( first_number, second_number, operador) {
 
 } */
 
-/* foto pasarlo */
-/* acceso a objetos */
+// Repaso de JS
 
+// WHILE -> imprimir todos los nums de 1 al 100
+var x=1
 
+while (x<=100) {
+    console.log(x);
+    x++;
+}
 
-/* funcion constructora */ 
+//forEach es una representación de forIn, el for-in es para cualquier tipo de elemento
+var numbers_array = [1,2,3,4,5]
+numbers_array.forEach(function(element){
+    console.log(element);
+})
 
+for (element in numbers_array) {
+    console.log(element);
+}
+
+//ternario == inline if
+var x = 2
+var y = '2'
+
+var result = (x===y) ? 'sí son iguales' : 'no son iguales'
+console.log(result);
+
+// return -> The first function PRINT something on the screen, the second one gives you the data so you can manipulate it
+function greeting () {
+    console.log('Hello');
+}
+
+function returnGreeting (){
+    return 'Hello'
+} 
+
+var salute = greeting() + 'Diana'
+var salute2 = returnGreeting () + 'Diana'
+
+//calculator (exercise 'return')
+var a = parseInt(prompt('add a num'))
+var b = parseInt(prompt('add another num'))
+var operator = prompt('do you want the sum or the remains?')
+
+function sum(a,b) {
+    return a+b
+}
+
+function minus(a,b) {
+    return a-b
+}
+
+function calculator (f_number, s_number, operator){
+    var result;
+
+    if (operator == 'sum') {
+        result = sum(f_number,s_number)
+    } else if (operator == 'minus') {
+        result = minus(f_number, s_number)
+    } else {console.log('No te lo manejo krnal!')}
+    
+    return result
+} 
+
+//Objets/arrays access
+var numbers_array = [1,2,3,4,5]
+
+numbers_array[4] //return 5
+
+var obj = {
+    'name':'Kodemia',
+    'age':30
+}
+
+obj.name
+obj['name']
+
+obj.age
+obj['age']
+
+var test_array = [
+    {
+        'name':'Kodemia1',
+        'age':30,
+        'hobbies':[
+            'videojuegos',
+            'otra cosa',
+        ]
+    },
+    {
+        'name':'Kodemia2',
+        'age':30,
+        'hobbies':[
+            'videojuegos',
+            'otra cosa',
+        ]
+    },
+    {
+        'name':'Kodemia3',
+        'age':30,
+        'hobbies':[
+            'videojuegos',
+            'otra cosa',
+        ]
+},
+]
+
+test_array[2]
+test_array[2]['age']
+test_array[2].age
+
+test_array[2].hobbies[0]
+test_array[2]['hobbies'][1]
+
+//object creator function
+//with array of objects
+var persons_array = [
+    {
+    'name':'Kodemia',
+    'age':30,
+    },
+]
+
+function Person(name,age) {
+    this.name = name
+    this.age = age
+    this.greeting = function() {
+        return 'hello' + this.name
+    }
+}
+
+var person = new Person(personObj.name,person.Obj.age)
+
+//with array of arrays
+var persons_array = [
+   [ 
+    'Kodemia',
+    30,
+   ],
+]
+
+persons_array.forEach(function(element,index){
+    var person = new Person(element[0],element[1])
+    console.log(Person.greeting());
+})
 /*  */
 
 var cars_array = [
@@ -102,4 +240,4 @@ var car = new Car (cars_array[0][0], cars_array [0][1], cars_array[0][2], cars_a
     console.log(new_car.getAll())
 })
 
-//dada cualquier cantidad retorno el precio por ejemeploo 10000  retorne $10,000.00, imprime 10 diez pesos, tienen tres contenedores n de 1 no de 3 litro uno de 7 y n de refresco  
+ 

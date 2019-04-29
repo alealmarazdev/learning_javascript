@@ -73,8 +73,15 @@ var person_array = [
 // -----------
 // DoM es document objet model, se representa se puede cambiar todos los elementos del html y css. El DOM es un estandar define el estandar de acceso a los documentos. 
 //nodo que es? podemos relacionar los nodos atraves de metodos del documento html atravesde su selectos*{ selectores complejos spat
-
-
+/* Al margen de la selección de elementos a través de clases e IDs, algo que es realmente cómodo y muy frecuentemente utilizado en CSS, existe un amplio abanico de métodos para seleccionar elementos dependiendo de la estructura del documento HTML denominados combinadores CSS:
+Nombre 	Ejemplo 	Significado
+Agrupación de selectores 	p, div { } 	Se aplican estilos a varios elementos.
+Selector descendiente 	#page div { } 	Se aplican estilos a elementos dentro de otros.
+Selector hijo 	#page > div { } 	Se aplican estilos a elementos hijos directos.
+Selector hermano adyacente 	div + div { } 	Se aplican estilos a elementos que siguen a otros.
+Selector hermano general 	div ~ div { } 	Se aplican estilos a elementos al mismo nivel.
+Selector universal 	#page * { } 	Se aplican estilos a todos los elementos.
+ */
 /*  En informática y en telecomunicación, de forma muy general, un nodo es un punto de intersección, conexión o unión de varios elementos que confluyen en el mismo lugar. Ahora bien, dentro de la informática la palabra nodo puede referirse a conceptos diferentes según el ámbito en el que nos movamos*/
 
 /* Combinador css de hermano posterior '~'
@@ -148,8 +155,8 @@ for(var i=0; i<divs_array.length; i++ ){
 
 
 koders_array.forEach(function (element) {
-    if (element.hobbies.includes('Videojuegos')){   
-       var persona = new Koders(element.nombre,  element.edad, element.genero,  element.hobbies)
-       console.log(persona.getNameHobbie()) 
+if (element.hobbies.includes('Videojuegos')){   
+        var persona = new Koders(element.nombre,  element.edad, element.genero,  element.hobbies)
+        console.log(persona.getNameHobbie()) 
     }
 })

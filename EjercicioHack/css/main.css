@@ -1,0 +1,39 @@
+/* * {
+  background: goldenrod;
+} */
+
+.container{
+    border:2px solid black;
+}
+
+.row{
+   
+    padding: 10px
+}
+
+.col{
+    background: skyblue
+}
+
+.cancel{
+    width: 60px;
+    height: 60px;
+}
+
+
+.entrega{
+    width: 500px;
+    background: black;
+    color: whitesmoke
+}
+
+.inicio{
+    width: 90px;
+    
+}
+
+.idVM {
+    width: 70px;
+    color: whitesmoke;
+    font-size: 10px
+}
