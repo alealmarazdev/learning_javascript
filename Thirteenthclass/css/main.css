@@ -1,0 +1,18 @@
+
+.on{
+    color: lightcoral;
+    font-size: 24px;
+    list-style: none
+}
+
+.on:hover{
+    color: lawngreen;
+    font-size:25px;
+}
+
+.off{
+    background: steelblue;
+    display: inline;
+    border-radius: 5px;
+    color: lawngreen;
+}
