@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,133 +8,150 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
-    <link rel="stylesheet" href="css/bootstrap-reboot.min.css" /> 
-    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
+    <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600,800" rel="stylesheet">
-    
+
 </head>
+
 <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-              
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Dropdown
-                      </a>
-                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="#">Action</a>
                         <a class="dropdown-item" href="#">Another action</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Something else here</a>
-                      </div>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                    </li>
-                  </ul>
-                  <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                  </form>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav> 
+
+     <div class="row d-flex justify-content-around mx-0">
+        <div class="col-sm-7 my-5">
+            <div class="card">
+                <div class="card-body">
+                    <img src="./img/bg.jpg" class="card-img-top" alt="...">
                 </div>
-              </nav>
-
-              <div class="row d-flex justify-content-around">
-                    <div class="col-sm-8 my-5">
-                      <div class="card">
-                        <div class="card-body">
-                                <img src="./img/bg.jpg" class="card-img-top" alt="...">
-                        </div>
-                      </div>
+            </div>
+        </div>
+        <div class="col-sm-5 my-5">
+            <div class="card">
+                <div class="card-body">
+                    <div class="">
+                        <h3 class="card-title  mt-0 mb-3">We are</h3>
+                        <!-- aqui va el nombre -->
+                    <p class="card-text" id="bussinesName"></p>
                     </div>
-                    <div class="col-sm-4 my-5">
-                      <div class="card">
-                        <div class="card-body">
-                            <div class="my-5"> 
-                          <h3 class="card-title my-3">We are</h3>
-                          <!-- aqui va el nombre -->
-                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                          </div>
-                          <div class="my-5"> 
-                                <h3 class="card-title my-3">Follow us</h3>
-                                <!-- aqui van los iconos -->
-                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                </div>
-                                <div class="my-5"> 
-                                        <h3 class="card-title my-3">Location</h3>
-                                        <!-- aca va la location -->
-                                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                        </div>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                      </div>
+                    <div class="my-5">
+                        <h3 class="card-title  mt-5 mb-3">Follow us</h3>
+                        <!-- aqui van los iconos -->
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                     </div>
-                  </div>
-
-
-
-
-
-              <div class="row">
-                    <div class="col-sm-4">
-                      <div class="card">
-                            <img src="./img/bhdog.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Special title treatment</h5>
-                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                      </div>
+                    <div class="my-5">
+                        <h3 class="card-title mt-5 mb-3">Location</h3>
+                        <!-- aca va la location -->
+                        <p class="card-text" id="location"></p>
                     </div>
-                    <div class="col-sm-4">
-                      <div class="card">
-                            <img src="./img/labradordog.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Special title treatment</h5>
-                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <div class="my-5">
+                            <h3 class="card-title mt-5 mb-2">Contacts</h3>
+                            <!-- aca va la location -->
+                                <p class="card-text">
+                                        info@kodemia.mx</p>
                         </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-4">
-                            <img src="./img/beagledog.jpg" class="card-img-top" alt="...">
-                            <div class="card">
-                              <div class="card-body">
-                                <h5 class="card-title">Special title treatment</h5>
-                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                              </div>
-                            </div>
-                          </div>
-                  </div>
-                  <div class="card text-center my-5">
-                        <div class="card-header">
-                          Featured
-                        </div>
-                        <div class="card-body">
-                          <h5 class="card-title">Special title treatment</h5>
-                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                        <div class="card-footer text-muted">
-                          2 days ago
-                        </div>
-                      </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <div class="row mx-0">
+        <div class="col-sm-4">
+            <div class="card">
+                <img src="./img/bhdog.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-titl text-center" id="dogName1"> </h5>
+                    <p class="card-text text-center" id="dogBreed1"></p>
+                    <p class="card-text" >Owner name: </p>
+                    <p class="card-text" id="nameOwner1"></p>
+                    <p class="card-text">Tel: </p>
+                    <p class="card-text" id="telOwner1"></p>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <img src="./img/labradordog.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                        <h5 class="card-title text-center" id="dogName2"> </h5>
+                        <p class="card-text text-center" id="dogBreed2"></p>
+                        <p class="card-text" >Owner name: </p>
+                        <p class="card-text" id="nameOwner2"></p>
+                        <p class="card-text">Tel: </p>
+                        <p class="card-text" id="telOwner2"></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <img src="./img/beagledog.jpg" class="card-img-top" alt="...">
+            <div class="card">
+                <div class="card-body">
+                        <h5 class="card-title text-center" id="dogName3"> </h5>
+                        <p class="card-text text-center" id="dogBreed3"></p>
+                        <p class="card-text" >Owner name: </p>
+                        <p class="card-text" id="nameOwner3"></p>
+                        <p class="card-text">Tel: </p>
+                        <p class="card-text" id="telOwner3"></p>
+            </div>
+        </div>
+    </div>
+</div> 
+    <footer>
+        <div class="card text-center mt-5 ">
+            <div class="card-header ">
+                Featured
+            </div>
+            <div class="card-body ">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+            <div class="card-footer text-muted">
+                2 days ago
+            </div>
+        </div>
+
+    </footer>
     <script src="./src/main.js"></script>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
