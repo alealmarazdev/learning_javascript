@@ -73,7 +73,7 @@ window.onload= function(){
 // window.close
 // window.location
 // window.location.hostname
-// que es un protocolo y http,servidor y servidor local memoria del cache y localStorage, por que funcionan sin el window, porque ya estas rn rl window sessionStorage
+// que es un protocolo y http,servidor y servidor local memoria del cache y localStorage, por que funcionan sin el window, porque ya estas rn rl window sessionStorage asincronia
 // window.location.pathname
 // protocal history vback forward
 
