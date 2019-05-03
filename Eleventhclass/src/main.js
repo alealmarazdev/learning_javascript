@@ -269,6 +269,7 @@ var kodemia = {
   ]
 }
 
+
 function createNode(tag) {
   return document.createElement(tag)
 }
